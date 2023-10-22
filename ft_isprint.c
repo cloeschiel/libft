@@ -6,7 +6,7 @@
 /*   By: cschiel <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/19 19:14:45 by cschiel           #+#    #+#             */
-/*   Updated: 2023/10/19 19:24:19 by cschiel          ###   ########.fr       */
+/*   Updated: 2023/10/22 16:05:31 by cschiel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,14 +15,4 @@ int	ft_isprint(int c)
 	if (c >= 32 && c <= 126)
 		return (1);
 	return (0);
-}
-
-#include <stdio.h>
-
-int main()
-{
-	int a;
-	
-	a = ' ';
-	printf("%d", ft_isprint(a));
 }

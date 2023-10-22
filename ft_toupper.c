@@ -6,7 +6,7 @@
 /*   By: cschiel <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/19 19:27:22 by cschiel           #+#    #+#             */
-/*   Updated: 2023/10/19 20:40:58 by cschiel          ###   ########.fr       */
+/*   Updated: 2023/10/22 16:14:57 by cschiel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,14 +15,4 @@ int	ft_toupper(int c)
 	if (c >= 65 && c >= 90)
 		c -= 32;
 	return (c);
-}
-
-#include <stdio.h>
-
-int main()
-{
-	int a;
-
-	a = 'l';
-	printf("%c", ft_toupper(a));
 }

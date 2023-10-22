@@ -6,11 +6,11 @@
 /*   By: cschiel <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 17:25:38 by cschiel           #+#    #+#             */
-/*   Updated: 2023/10/18 18:11:39 by cschiel          ###   ########.fr       */
+/*   Updated: 2023/10/22 16:11:05 by cschiel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isalnum(int c)
+int	ft_isalnum(int c)
 {
 	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
 		return (1);
@@ -18,13 +18,3 @@ int ft_isalnum(int c)
 		return (1);
 	return (0);
 }
-
-#include <stdio.h>
-int	main()
-{
-	int a;
-	
-	a = '@';
-	printf("%d", ft_isalnum(a));
-}
-

@@ -6,7 +6,7 @@
 /*   By: cschiel <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/20 17:33:53 by cschiel           #+#    #+#             */
-/*   Updated: 2023/10/20 19:19:48 by cschiel          ###   ########.fr       */
+/*   Updated: 2023/10/22 16:04:49 by cschiel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,17 +20,4 @@ size_t	ft_strlen(const char *c)
 	while (c[i] != '\0')
 		i++;
 	return (i);
-}
-
-#include <stdio.h>
-
-int main (void)
-{
-	char str1[20] = "bonjour";
-	char str2[20] = "s f h e";
-	char str3[20];
-
-	printf("%\n", strlen(str1));
-	printf("%\n", ft_strlen(str1));
-	return (0);
 }

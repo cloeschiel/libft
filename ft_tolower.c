@@ -6,7 +6,7 @@
 /*   By: cschiel <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/19 20:42:10 by cschiel           #+#    #+#             */
-/*   Updated: 2023/10/19 20:50:07 by cschiel          ###   ########.fr       */
+/*   Updated: 2023/10/22 16:14:09 by cschiel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,14 +15,4 @@ int	ft_tolower(int c)
 	if (c >= 65 && c <= 90)
 		c += 32;
 	return (c);
-}
-
-#include<stdio.h>
-
-int	main()
-{
-	int a;
-	
-	a = 'M';
-	printf("%c", ft_tolower(a));
 }
