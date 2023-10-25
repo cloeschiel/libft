@@ -6,11 +6,11 @@
 /*   By: cschiel <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/20 17:33:53 by cschiel           #+#    #+#             */
-/*   Updated: 2023/10/22 16:04:49 by cschiel          ###   ########.fr       */
+/*   Updated: 2023/10/25 18:28:23 by cschiel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
 size_t	ft_strlen(const char *c)
 {
