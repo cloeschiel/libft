@@ -6,13 +6,10 @@
 /*   By: cschiel <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/22 16:47:43 by cschiel           #+#    #+#             */
-/*   Updated: 2023/10/22 16:49:08 by cschiel          ###   ########.fr       */
+/*   Updated: 2023/10/26 19:36:47 by cschiel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<string.h>
-
-void *memchr(const void *s, int c, size_t n)
+void	*memchr(const void *s, int c, size_t n)
 {
-	
 }

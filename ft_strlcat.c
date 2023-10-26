@@ -6,13 +6,10 @@
 /*   By: cschiel <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/22 16:43:17 by cschiel           #+#    #+#             */
-/*   Updated: 2023/10/22 16:44:37 by cschiel          ###   ########.fr       */
+/*   Updated: 2023/10/26 19:29:30 by cschiel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<string.h>
-
-size_t strlcat(char *dst, const char *src, size_t)
+size_t	strlcat(char *dst, const char *src, size_t size)
 {
-	
 }

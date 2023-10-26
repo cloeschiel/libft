@@ -6,11 +6,12 @@
 /*   By: cschiel <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/22 16:20:38 by cschiel           #+#    #+#             */
-/*   Updated: 2023/10/22 16:21:38 by cschiel          ###   ########.fr       */
+/*   Updated: 2023/10/26 19:26:29 by cschiel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void ft_bzero(void *s, size_t)
-{
-	
+#include "libft.h"
+
+void	ft_bzero(void *s, size_t n)
+{	
 }

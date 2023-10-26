@@ -6,13 +6,10 @@
 /*   By: cschiel <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/22 16:45:00 by cschiel           #+#    #+#             */
-/*   Updated: 2023/10/22 16:46:12 by cschiel          ###   ########.fr       */
+/*   Updated: 2023/10/26 19:31:48 by cschiel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<string.h>
-
-char *strchr(const char *s,int c)
+char	*strchr(const char *s, int c)
 {
-	
 }

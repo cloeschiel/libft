@@ -6,13 +6,10 @@
 /*   By: cschiel <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/22 16:40:24 by cschiel           #+#    #+#             */
-/*   Updated: 2023/10/22 16:42:48 by cschiel          ###   ########.fr       */
+/*   Updated: 2023/10/26 19:28:14 by cschiel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<string.h>
-
-	strlcpy(char *dst,const char *src, size_t size)
+size_t	strlcpy(char *dst, const char *src, size_t size)
 {
-	
 }

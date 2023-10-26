@@ -6,13 +6,12 @@
 /*   By: cschiel <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/22 16:22:39 by cschiel           #+#    #+#             */
-/*   Updated: 2023/10/22 16:23:54 by cschiel          ###   ########.fr       */
+/*   Updated: 2023/10/26 19:25:01 by cschiel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<string.h>
+#include "libft.h"
 
-void *memcpy(void *dest, const void *src, size_t)
-{
-	
+void	*memcpy(void *dest, const void *src, size_t n)
+{	
 }

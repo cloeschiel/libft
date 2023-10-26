@@ -6,13 +6,10 @@
 /*   By: cschiel <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/22 16:46:27 by cschiel           #+#    #+#             */
-/*   Updated: 2023/10/22 16:47:25 by cschiel          ###   ########.fr       */
+/*   Updated: 2023/10/26 19:32:27 by cschiel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<strrchr>
-
-char *strrchr(const char *s, int c)
-{
-	
+char	*strrchr(const char *s, int c)
+{	
 }

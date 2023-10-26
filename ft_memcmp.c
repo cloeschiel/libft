@@ -6,13 +6,10 @@
 /*   By: cschiel <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/22 16:49:26 by cschiel           #+#    #+#             */
-/*   Updated: 2023/10/22 16:50:51 by cschiel          ###   ########.fr       */
+/*   Updated: 2023/10/26 19:37:41 by cschiel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<string.h>
-
-int ft_memcpy(const void *s1, const void *s2, size_t n)
+int	ft_memcpy(const void *s1, const void *s2, size_t n)
 {
-	
 }
