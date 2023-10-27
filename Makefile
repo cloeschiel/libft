@@ -1,8 +1,10 @@
-NAME = libft
+NAME = libft.a
 
 CC = gcc
 
-CFLACS = -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror
+
+ARFLAGS = rcs
 
 SRC = ft_isalpha.c \
       ft_isdigit.c \
@@ -11,21 +13,22 @@ SRC = ft_isalpha.c \
       ft_isprint.c \
       ft_strlen.c \
       ft_toupper.c \
-      ft_tolower.c \
+      ft_tolower.c 
 
-OBJ = ${SCR:.c=.o}
+OBJ = $(SRC:.c=.o)
 
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	$(CC) $(CFLAGS) $(SRC) $(OBJ) -O $(NAME)
+	$(AR) $(ARFLAGS) $@ $^
 
-CLEAN:
+%.o: %.c
+	$(CC) $(CFLAGS) -c $< -o $@
 
-	rm -rf $(OBJ)
+clean:
+	rm -f *.o
 
 fclean: clean
-	
-	rm -rf $(NAME)
+	rm -f $(NAME)
 
 re: fclean all
