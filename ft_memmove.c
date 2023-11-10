@@ -6,7 +6,7 @@
 /*   By: cschiel <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/22 16:26:04 by cschiel           #+#    #+#             */
-/*   Updated: 2023/11/04 17:25:49 by cschiel          ###   ########.fr       */
+/*   Updated: 2023/11/09 17:16:59 by cschiel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,10 +27,12 @@ void	*ft_memmove(void *dst, const void *src, size_t n)
 		while (n-- > 0)
 			d[n] = s[n];
 	else
+	{
 		while (i < n)
 		{
 			d[i] = s[i];
 			i++;
 		}
+	}
 	return (dst);
 }
