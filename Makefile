@@ -1,6 +1,6 @@
 NAME = libft.a
 
-CC = gcc
+CC = cc
 
 CFLAGS = -Wall -Wextra -Werror
 
@@ -20,8 +20,9 @@ SRC = ft_isalpha.c \
       ft_memmove.c \
       ft_memcmp.c \
       ft_strlcpy.c \
-      ft_strncmp.c 
-#      ft_memchr.c
+      ft_strncmp.c \
+      ft_memchr.c \
+      ft_strchr.c
 
 OBJ = $(SRC:.c=.o)
 
@@ -40,3 +41,5 @@ fclean: clean
 	rm -f $(NAME)
 
 re: fclean all
+
+.PHONY: all clean fclean re
