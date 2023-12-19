@@ -3,13 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cschiel <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: cschiel <cschiel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/22 16:51:17 by cschiel           #+#    #+#             */
-/*   Updated: 2023/10/26 19:42:13 by cschiel          ###   ########.fr       */
+/*   Updated: 2023/12/19 18:16:32 by cschiel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	atoi(const char *nptr)
+#include "libft.h"
+
+int	ft_atoi(const char *nptr)
 {
+    int	
 }

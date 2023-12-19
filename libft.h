@@ -3,20 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cschiel <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: cschiel <cschiel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/25 17:59:51 by cschiel           #+#    #+#             */
-/*   Updated: 2023/12/18 18:53:34 by cschiel          ###   ########.fr       */
+/*   Updated: 2023/12/19 18:16:41 by cschiel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include <unistd.h>
+# include <unistd.h>//voir lesquels j
 # include <stdlib.h>
 # include <stddef.h>
-# include <string.h>
 
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
@@ -37,5 +36,7 @@ void	*ft_memchr(const void *s, int c, size_t n);
 char	*ft_strchr(const char *s, int c);
 char	*ft_strrchr(const char *s, int c);
 size_t	ft_strlcat(char *dst, const char *src, size_t size);
+int		ft_atoi(const char *nptr);
+
 
 #endif
