@@ -6,7 +6,7 @@
 /*   By: cschiel <cschiel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/22 16:51:17 by cschiel           #+#    #+#             */
-/*   Updated: 2024/01/04 19:34:55 by cschiel          ###   ########.fr       */
+/*   Updated: 2024/01/05 17:15:10 by cschiel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,3 +38,18 @@ int	ft_atoi(const char *nptr)
 	result *= sign;
 	return (result);
 }
+/* #include <stdio.h>
+
+int main()
+{
+	const char *coucou = "-523";
+	const char *coucou2 = "-0";
+	const char *coucou3 = "-2147483648";
+	const char *coucou4 = "5";
+	const char *coucou5 = "-8";
+	printf("%d\n", ft_atoi(coucou));
+	printf("%d\n", ft_atoi(coucou2));
+	printf("%d\n", ft_atoi(coucou3));
+	printf("%d\n", ft_atoi(coucou4));
+	printf("%d\n", ft_atoi(coucou5));
+} */
