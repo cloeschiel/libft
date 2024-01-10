@@ -1,37 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnstr.c                                       :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cschiel <cschiel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/26 19:38:37 by cschiel           #+#    #+#             */
-/*   Updated: 2024/01/10 21:11:36 by cschiel          ###   ########.fr       */
+/*   Created: 2023/10/18 17:08:47 by cschiel           #+#    #+#             */
+/*   Updated: 2024/01/10 20:43:28 by cschiel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strnstr(const char *big, const char *little, size_t len)
+char	*ft_strdup(const char *s)
 {
-	size_t	i;
-	size_t	j;
+	char	*str;
+	size_t	len;
 
-	i = 0;
-	if (little[0] == '\0')
-		return ((char *)big);
-	while (big[i] && i < len)
-	{
-		j = 0;
-		if (big[i] == little[0])
-		{
-			while (little[j] && big[i + j] == little[j]
-				&& big[i + j] != '\0' && i + j < len)
-				j++;				
-			if (little[j] == '\0')
-				return (((char *)big) + i);
-		}
-		i++;
-	}
-	return (NULL);
+	len = ft_strlen(s)+1;
+	str = malloc(sizeof(char) * len);
+	if (!str)
+		return (NULL);
+	return ((char *) ft_memcpy(str, s, len));
 }
