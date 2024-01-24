@@ -6,7 +6,7 @@
 /*   By: cschiel <cschiel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/24 15:09:43 by cschiel           #+#    #+#             */
-/*   Updated: 2024/01/24 16:43:42 by cschiel          ###   ########.fr       */
+/*   Updated: 2024/01/24 19:12:57 by cschiel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*str;
-	int	size;
+	int		size;
 
 	if (!s1 || !s2)
 		return (NULL);

@@ -6,7 +6,7 @@
 /*   By: cschiel <cschiel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/26 19:38:37 by cschiel           #+#    #+#             */
-/*   Updated: 2024/01/10 21:11:36 by cschiel          ###   ########.fr       */
+/*   Updated: 2024/01/24 19:07:30 by cschiel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,9 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 		{
 			while (little[j] && big[i + j] == little[j]
 				&& big[i + j] != '\0' && i + j < len)
-				j++;				
+			{
+				j++;
+			}				
 			if (little[j] == '\0')
 				return (((char *)big) + i);
 		}
