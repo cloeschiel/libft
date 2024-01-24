@@ -1,55 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_itoa.c                                          :+:      :+:    :+:   */
+/*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cschiel <cschiel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/24 15:53:16 by cschiel           #+#    #+#             */
-/*   Updated: 2024/01/24 16:32:14 by cschiel          ###   ########.fr       */
+/*   Created: 2024/01/24 15:09:43 by cschiel           #+#    #+#             */
+/*   Updated: 2024/01/24 16:43:42 by cschiel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	ft_nblen(int n)
-{
-	int	i;
-
-	i = 0;
-	if (n <= 0)
-		i = 1;
-	while (n)
-	{
-		n /= 10;
-		++i;
-	}
-	return (i);
-}
-
-char	*ft_itoa(int n)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*str;
-	int		len;
-	size_t	nb;
+	int	size;
 
-	len = ft_nblen(n);
-	nb = n;
-	str = (char *) malloc(sizeof(char) * len + 1);
+	if (!s1 || !s2)
+		return (NULL);
+	size = ft_strlen(s1) + ft_strlen(s2) + 1;
+	str = (char *) malloc(sizeof(char) * size);
 	if (!str)
 		return (NULL);
-	if (n == 0)
-		str[0] = '\0';
-	if (n < 0)
-	{
-		str[0] = '-';
-		nb *= -1;
-	}
-	while (nb != 0)
-	{
-		str[len] = nb % 10 + '0';
-		nb /= 10;
-		len --;
-	}
+	str[0] = '\0';
+	ft_strlcat (str, s1, ft_strlen(s1) + 1);
+	ft_strlcat(str, s2, size);
 	return (str);
 }

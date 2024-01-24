@@ -1,55 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_itoa.c                                          :+:      :+:    :+:   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cschiel <cschiel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/24 15:53:16 by cschiel           #+#    #+#             */
-/*   Updated: 2024/01/24 16:32:14 by cschiel          ###   ########.fr       */
+/*   Created: 2024/01/24 15:03:58 by cschiel           #+#    #+#             */
+/*   Updated: 2024/01/24 16:31:23 by cschiel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	ft_nblen(int n)
-{
-	int	i;
-
-	i = 0;
-	if (n <= 0)
-		i = 1;
-	while (n)
-	{
-		n /= 10;
-		++i;
-	}
-	return (i);
-}
-
-char	*ft_itoa(int n)
+char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char	*str;
-	int		len;
-	size_t	nb;
+	size_t	size;
 
-	len = ft_nblen(n);
-	nb = n;
+	if (!s)
+		return (NULL);
+	if (start >= ft_strlen(s))
+		return (ft_strdup(""));
+	size = ft_strlen (s + start);
+	if (size < len)
+		len = size;
 	str = (char *) malloc(sizeof(char) * len + 1);
 	if (!str)
 		return (NULL);
-	if (n == 0)
-		str[0] = '\0';
-	if (n < 0)
-	{
-		str[0] = '-';
-		nb *= -1;
-	}
-	while (nb != 0)
-	{
-		str[len] = nb % 10 + '0';
-		nb /= 10;
-		len --;
-	}
+	ft_strlcpy(str, s + start, len +1);
 	return (str);
 }
