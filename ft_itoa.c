@@ -6,12 +6,11 @@
 /*   By: cschiel <cschiel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/24 15:53:16 by cschiel           #+#    #+#             */
-/*   Updated: 2024/01/24 20:27:49 by cschiel          ###   ########.fr       */
+/*   Updated: 2024/01/24 20:37:32 by cschiel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 static int	ft_nblen(int n)
 {
@@ -41,10 +40,7 @@ char	*ft_itoa(int n)
 		return (NULL);
 	str[len] = '\0';
 	if (n == 0)
-	{
-		str[0] = '0';
-		return (str);
-	}
+		return (str[0] = '0', str);
 	if (n < 0)
 	{
 		str[0] = '-';
@@ -52,7 +48,7 @@ char	*ft_itoa(int n)
 	}
 	while (nb != 0)
 	{
-		str[len-1] = (nb % 10 + '0');
+		str[len - 1] = (nb % 10 + '0');
 		nb /= 10;
 		len --;
 	}
