@@ -38,7 +38,8 @@ SRC = ft_isalpha.c \
 	  ft_strmapi.c \
 	  ft_itoa.c \
 	  ft_strtrim.c \
-	  ft_strjoin.c
+	  ft_strjoin.c \
+	  ft_split.c
 
 OBJ = $(SRC:.c=.o)
 

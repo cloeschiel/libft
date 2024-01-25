@@ -6,29 +6,12 @@
 /*   By: cschiel <cschiel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/24 15:27:22 by cschiel           #+#    #+#             */
-/*   Updated: 2024/01/24 20:58:24 by cschiel          ###   ########.fr       */
+/*   Updated: 2024/01/25 17:02:51 by cschiel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 //#include <stdio.h>
-
-static int	*ft_strchr(const char *s, char *c)
-{
-	int	i;
-
-	i = 0;
-	while (s[i])
-	{
-		if (s[i] == (char)c)
-			return ((char *)& s[i]);
-		i++;
-	}
-	if (s[i] == (char)c)
-		return ((char *)& s[i]);
-	return (NULL);
-}
-
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
@@ -43,6 +26,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 		return (ft_strdup(s1));
 	while (ft_strchr(set, *s1) && *s1)
 		s1++;
+	len = ft_strlen(s1);
 	while (ft_strrchr(set, s1[len]) && len > 0)
 		len --;
 	str = ft_substr(s1, 0, len + 1);
