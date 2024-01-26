@@ -6,7 +6,7 @@
 /*   By: cschiel <cschiel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/24 15:16:57 by cschiel           #+#    #+#             */
-/*   Updated: 2024/01/24 19:13:42 by cschiel          ###   ########.fr       */
+/*   Updated: 2024/01/26 15:15:31 by cschiel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,9 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	char	*str;
 
 	i = 0;
-	len = ft_strlen(s);
 	if (!s || !f)
 		return (NULL);
+	len = ft_strlen(s);
 	str = (char *) malloc(sizeof(char) * len + 1);
 	if (!str)
 		return (NULL);

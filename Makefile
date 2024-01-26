@@ -2,7 +2,7 @@ NAME = libft.a
 
 CC = cc
 
-CFLAGS = -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror -g3
 
 ARFLAGS = rcs
 
@@ -39,7 +39,7 @@ SRC = ft_isalpha.c \
 	  ft_itoa.c \
 	  ft_strtrim.c \
 	  ft_strjoin.c \
-	  ft_split.c
+	  ft_split.c 
 
 OBJ = $(SRC:.c=.o)
 

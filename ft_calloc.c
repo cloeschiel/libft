@@ -6,7 +6,7 @@
 /*   By: cschiel <cschiel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 17:25:38 by cschiel           #+#    #+#             */
-/*   Updated: 2024/01/10 20:33:36 by cschiel          ###   ########.fr       */
+/*   Updated: 2024/01/26 15:16:35 by cschiel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ void	*ft_calloc(size_t nmemb, size_t size)
 {
 	void	*ptr;
 
+	if (size && nmemb * size / size == nmemb)
+		return (NULL);
 	ptr = malloc(nmemb * size);
 	if (!ptr)
 		return (NULL);

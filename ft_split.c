@@ -6,7 +6,7 @@
 /*   By: cschiel <cschiel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/25 17:23:38 by cschiel           #+#    #+#             */
-/*   Updated: 2024/01/25 18:19:04 by cschiel          ###   ########.fr       */
+/*   Updated: 2024/01/26 15:13:28 by cschiel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,9 +57,11 @@ char	**ft_split(char const *s, char c)
 	char	**r;
 
 	i = 0;
+	if (!s)
+		return (NULL);
 	nb_word = ft_count_words(s, c);
 	r = (char **)malloc(sizeof(char *) * (nb_word + 1));
-	if (!r || !s)
+	if (!r)
 		return (NULL);
 	i = -1;
 	while (nb_word > ++i)
